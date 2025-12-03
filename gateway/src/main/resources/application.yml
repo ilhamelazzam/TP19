@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: false
+      mvc:
+        routes:
+          - id: voiture-service
+            uri: lb://SERVICE-VOITURE
+            predicates:
+              - Path=/voitures/**
+          - id: voiture-dynamic-prefix
+            uri: lb://SERVICE-VOITURE
+            predicates:
+              - Path=/SERVICE-VOITURE/**
+            filters:
+              - StripPrefix=1
+        discovery:
+          locator:
+            enabled: true
+            lower-case-service-id: false

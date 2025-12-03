@@ -1,0 +1,7 @@
+ma\mlilab\servicevoiture\web\VoitureController.class
+ma\mlilab\servicevoiture\model\Client.class
+ma\mlilab\servicevoiture\ServiceVoitureApplication.class
+ma\mlilab\servicevoiture\entities\Voiture.class
+ma\mlilab\servicevoiture\feign\ClientService.class
+ma\mlilab\servicevoiture\services\VoitureService.class
+ma\mlilab\servicevoiture\repositories\VoitureRepository.class
